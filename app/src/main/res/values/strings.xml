@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">InquisSample</string>
+    <string name="category_general">General</string>
+    <string name="img_article">Article image</string>
+
+    <string-array name="news_categories">
+        <item>General</item>
+        <item>Health</item>
+        <item>Science</item>
+        <item>Business</item>
+        <item>Entertainment</item>
+        <item>Sports</item>
+        <item>Technology</item>
+    </string-array>
+</resources>

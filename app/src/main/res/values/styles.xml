@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorLightGray</item>
+    </style>
+
+    <style name="LargeText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="LargeText.DarkGray" parent="LargeText">
+        <item name="android:textColor">@color/colorDarkGray</item>
+    </style>
+
+    <style name="Label" parent="LargeText.DarkGray">
+        <item name="android:layout_marginStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="Label.Item" parent="Label">
+        <item name="android:maxLines">2</item>
+    </style>
+
+
+    <style name="Label.Title" parent="Label">
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="Label.MultiLineText" parent="Label">
+        <item name="android:textSize">18sp</item>
+
+    </style>
+</resources>

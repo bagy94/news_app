@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="hr.bagy94.dev.inquissample.newslist.NewsListFragment"
+        android:label="news_list_fragment"
+        tools:layout="@layout/news_list_fragment">
+        <action
+            android:id="@+id/action_item_selected"
+            app:destination="@id/newsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/newsFragment" />
+        <argument
+            android:name="selected_article"
+            app:argType="hr.bagy94.dev.inquissample.model.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="hr.bagy94.dev.inquissample.newsdescription.NewsFragment"
+        android:label="news_fragment"
+        tools:layout="@layout/news_fragment">
+        <action
+            android:id="@+id/action_newsFragment_to_listFragment"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/listFragment" />
+    </fragment>
+</navigation>
